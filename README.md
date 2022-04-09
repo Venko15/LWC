@@ -3,7 +3,7 @@
 [![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)](https://www.arduino.cc/)
 
 
-![image](https://user-images.githubusercontent.com/61556713/162579664-5fafed29-7781-442f-9131-cdc2ce409c03.png)
+![LWC](https://user-images.githubusercontent.com/61556713/162579700-43c2ece0-820b-4bfc-b0a3-db23b27da614.png)
 
 Начин на действие
 Работи чрез връзка с блутуут модул и нашия телефон като през мобилния се изпращат инстукции към модула, които се приемат от ардуиното като ги преработва и изпълнява в зависимост от това, което е изпратено през устройството ни. При определени команди може да се движи напред, назад и да завива.
