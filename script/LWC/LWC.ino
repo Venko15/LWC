@@ -1,10 +1,6 @@
 #include <SoftwareSerial.h> 
-
-
-
 int bluetoothTx = 0; 
 int bluetoothRx = 1;
-int servop = -1;
 int IN1 = 7;
 int IN2 = 6;
 int IN3 = 5;
@@ -12,7 +8,8 @@ int IN4 = 4;
 int ENA = 9;
 int ENB = 3;
 
-SoftwareSerial bluetooth(0, 1);
+SoftwareSerial bluetooth(bluetoothTx, bluetoothRx);
+
 void setup()
 {
 
@@ -21,11 +18,10 @@ void setup()
   pinMode(IN3, OUTPUT);
   pinMode(IN4, OUTPUT);
   pinMode(ENA, OUTPUT);
- pinMode(ENB, OUTPUT);
+  pinMode(ENB, OUTPUT);
 
   Serial.begin(9600);
   bluetooth.begin(9600);
-  myservo.write(90);
 }
 
 void loop()
@@ -46,7 +42,6 @@ void loop()
        digitalWrite(IN4,LOW);    
     }
     else if (Move == 1) {
-
        analogWrite(ENA, 130);
        analogWrite(ENB, 130);
        digitalWrite(IN1,HIGH);
