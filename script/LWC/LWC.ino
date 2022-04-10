@@ -46,7 +46,7 @@ void loop()
        digitalWrite(IN4,LOW);    
     }
     else if (Move == 1) {
-        //myservo.write(130);
+
        analogWrite(ENA, 130);
        analogWrite(ENB, 130);
        digitalWrite(IN1,HIGH);
