@@ -2,4 +2,31 @@
 [![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)](http://cppreference.com/)
 [![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)](https://www.arduino.cc/)
 
-LWC is a remote controlled car. Main components - Arduino Uno, bluetooth module and L298N module(driver module).
+
+![LWC](https://user-images.githubusercontent.com/61556713/162579737-665bc22c-26d3-4699-86c5-87a0a6813d88.png)
+
+LWC e количка с дистанционно управление, която използва Bluetooth за нейната работа. За да се контролира трябва да се изтегли приложението LWC: control. 
+# Начин на действие
+Работи чрез връзка с блутуут модул и нашия телефон като през мобилния се изпращат инстукции към модула, които се приемат от ардуиното като ги преработва и изпълнява в зависимост от това, което е изпратено през устройството ни. При определени команди може да се движи напред, назад и да завива.
+
+
+
+# Как работи?
+ Свързване на проекта:
+![image](https://user-images.githubusercontent.com/61556713/162583172-58041e1a-95fb-4b85-a98e-559ced11f8f7.png)
+
+
+Изпращаме информация към Бluetooth модула, който след това я изпраща към ардуиното, който преработва информацията. 
+
+![image](https://user-images.githubusercontent.com/61556713/162582199-c642da03-b394-400b-8f78-88091ad4c4c5.png)
+
+След като вече е решено действието, което ще се извърши спрямо инструкцията дадена от нас и с помощта на драйвер модула завъртваме мотрите с определената скорост
+![image](https://user-images.githubusercontent.com/61556713/162582167-ae922160-27c9-4ae6-a5ff-08a887b6a811.png)
+
+
+# Инстукции за стартиране
+  1. На clipper-а се свързва 9V батерия
+  2. Pair-ваме се с Bluetooth модула
+  3. Изтегляме приложението, което е включено в репото
+  4. Чрез приложението се свързваме с модула
+  5. Забавлявайте се 
